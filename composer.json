@@ -1,0 +1,25 @@
+{
+    "name": "cihispano/breadcrumbs",
+    "description": "Simple breadcrumb library for PHP 8.1 and above",
+    "type": "library",
+    "license": "MIT",
+    "homepage": "https://gitlab.com/cihispano.org/breadcrumbs",
+    "authors": [
+        {
+            "name": "Jesús Guerreiro Real de Asua",
+            "email": "jesus@jesusguerreiro.es"
+        }
+    ],
+    "require": {
+        "php": ">=8.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Cihispano\\Breadcrumbs\\": "src/"
+        }
+    },
+    "support": {
+        "telegram": "https://t.me/CodeIgniterEnEspanol",
+        "source": "https://gitlab.com/cihispano.org/breadcrumbs"
+    }
+}
