@@ -18,6 +18,31 @@
             "Cihispano\\Breadcrumbs\\": "src/"
         }
     },
+    "scripts": {
+        "analyze": "vendor/bin/phpstan analyze --verbose",
+        "test": "vendor/bin/phpunit tests --testdox",
+        "cs": "vendor/bin/php-cs-fixer fix --ansi --verbose --dry-run --diff",
+        "cs-fix": "php-cs-fixer fix --ansi --verbose --diff",
+        "style": "@cs-fix"
+    },
+    "scripts-descriptions": {
+        "analyze": "Analyses source code",
+        "test": "Run unit tests",
+        "cs": "Check the coding style",
+        "cs-fix": "Fix the coding style",
+        "style": "cs-fix alias"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5",
+        "friendsofphp/php-cs-fixer": "^3.11",
+        "phpstan/phpstan": "^1.8",
+        "phpunit/php-code-coverage": "^9.2"
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Cihispano\\Tests\\": "tests/"
+        }
+    },
     "support": {
         "telegram": "https://t.me/CodeIgniterEnEspanol",
         "source": "https://gitlab.com/cihispano.org/breadcrumbs"
