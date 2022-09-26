@@ -223,3 +223,14 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+### PHPUnit ###
+build
+phpunit.xml
+!build/.gitkeep
+
+### PHP CS Fixer ###
+.php-cs-fixer.php
+
+### PHPStan ###
+phpstan.neon
